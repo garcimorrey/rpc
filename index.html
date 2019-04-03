@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-us">
+ 
+<head>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body> 
+	
+	<div class="main-body">
+
+		<h1>Paper, Rock, Scissors Game</h1>
+
+		<p>A traditionnal Paper, Rock and Scissors. You have to beat the computer by choosing one of the 3 options.</p>
+
+		<div class="p-r-s">
+			<div class="one_three">
+			
+				<h3>Take your pick</h3>
+			
+				<ul class="choices">
+					<li>
+						<a onclick="compare('paper', computerChoice)">
+							<img src="assets/images/paper.png" width="50px" />
+						</a>
+					</li>	
+					<li>
+						<a onclick="compare('rock', computerChoice)">
+							<img src="assets/images/rock.png" width="50px" />
+						</a>
+					</li>	
+					<li>
+						<a onclick="compare('scissors', computerChoice)">
+							<img src="assets/images/scissors.png" width="50px" />
+						</a>
+					</li>
+				</ul>
+			</div> 
+			
+			<div>
+					<h3>Scores</h3>
+				
+					<div class="scores">
+			 			<div class="score-box">
+				 			<div id="playerScore"></div>	
+				 			<span>Player</span>
+			 			</div>
+
+			 			<div class="score-box">
+				 			<div id="computerScore"></div>
+				 			<span>Computer</span>
+			 			</div>
+		 		</div>
+		 	</div> 
+	 	
+	 	
+			<div>
+				
+				<h3>Result</h3>
+			
+				<ul class="decider">
+			
+					<li>	
+			 				<span>Your score:</span>
+			 				<span id="playerChoice">Select your choice</span>		
+			 		</li>
+			 		<li>
+			 				<span>Computer:</span>
+			 				<span id="computerChoice">...</span>			 			
+			 		</li>
+		 		</ul>	
+	 		</div>		
+        </div>
+	</div>
+	
+	<script src="assets/javascript/rpc.js"></script>
+
+</body>
+</html>
